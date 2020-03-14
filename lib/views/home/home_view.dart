@@ -13,12 +13,31 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ResponsiveBuilder(
+       
       builder: (context, sizingInformation) => Scaffold(
+        
          drawer: sizingInformation.deviceScreenType == DeviceScreenType.Mobile
             ? NavigationDrawer()
             : null,
       backgroundColor: Colors.white,
-      body: CenteredView(
+      body: 
+      new Container(
+     decoration: BoxDecoration(
+          
+
+          image: DecorationImage(
+            
+            image: AssetImage("assets/happy.jpg"),
+            fit: BoxFit.cover,
+            
+            
+            
+          ),
+        ),
+      
+      child:CenteredView(
+
+        
         child: Column(
           children: <Widget>[
             NavigationBar(),
@@ -31,6 +50,8 @@ class HomeView extends StatelessWidget {
           ],
         ),
       ),
-    ));
+
+      
+    )));
   }
 }

@@ -16,9 +16,10 @@ class NavigationBarTabletDesktop extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: <Widget>[
-              NavBarItem('Episodes'),
+              NavBarItem('Help'),
               SizedBox(
                 width: 60,
+                
               ),
               NavBarItem('About'),
             ],

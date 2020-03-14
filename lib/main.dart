@@ -7,7 +7,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    var materialApp = MaterialApp(
+      
       title: 'Flutter Demo',
       theme: ThemeData(
         
@@ -18,5 +19,6 @@ class MyApp extends StatelessWidget {
       ),
       home: HomeView()
     );
+    return materialApp;
   }
 }
